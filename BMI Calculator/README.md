@@ -1,16 +1,69 @@
-# React + Vite
+## React BMI Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean, simple, **BMI (Body Mass Index) Calculator built with React.js.**
+This application allows users to calculate their BMI instantly by entering height and weight, with real-time results and BMI category feedback.
 
-Currently, two official plugins are available:
+-----
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- BMI calculation based on height & weight
+- Instant result without page reload
+- BMI category display (Underweight, Normal, Overweight, Obese)
+- Form validation for empty or invalid input
+- Reset functionality
+- Beginner-friendly component structure
+- Clean & minimal UI
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies Used
 
-## Expanding the ESLint configuration
+- React.js
+- JavaScript (ES6)
+- JSX
+- React Hooks (useState)
+- CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+----
+
+## Future Improvements
+
+- Unit toggle (kg/cm ↔ lb/ft)
+- BMI history tracking
+- Health tips based on BMI result
+- Responsive design for all devices
+- Dark mode support
+- Animated progress indicator
+- Save BMI data using LocalStorage
+- Multi-language support
+
+## Author
+
+Md Salehin
+Frontend Developer | JavaScript & React Learner
+Creator of Code With Salehin
+
+🔗 **Connect With Me**
+
+Code With Salehin
+- ▶ YouTube: https://youtube.com/@codewithsalehin
+- ⓕ Facebook Page: https://facebook.com/codewithsalehin
+- in LinkedIn: https://www.linkedin.com/in/mdshalehin/
+- ✉ Email: developer.shalehin@gmail.com
+
+## Core Logic Concept
+
+- User input is managed using React state
+- BMI is calculated using the standard BMI formula
+- Conditional rendering is used for result & category display
+- UI logic and calculation logic are kept clean & separated
+- Fully client-side, no backend required
+
+## How It Works
+
+- User enters height and weight
+- Data is stored in React state
+- BMI is calculated on form submit
+- Result & BMI category are displayed instantly
+- User can reset and recalculate anytime
+
+ If you like this project, don’t forget to **star the repository** and follow **Code With Salehin**!

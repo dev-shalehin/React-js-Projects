@@ -18,7 +18,7 @@ export default function BmiForm() {
     const bmiValue = waight / (h * h);
     const fixedBMI = Number(bmiValue.toFixed(2));
 
-    if (!isNaN(fixedBMI)) {
+    if (!isNaN(fixedBMI) && fixedBMI != 0) {
       setBMI(fixedBMI);
     }else(alert('Input Valid Number'))
 
