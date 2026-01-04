@@ -5,8 +5,8 @@ const TaskItem = (props) => {
     <>
         <li className='list-none py-4 flex justify-between items-center border-b border-gray-400'>
             <div>
-                <input type="checkbox" className='h-6 w-6 inline-block mr-5' />
-                <span className='text-2xl'>ToDo's</span>
+                <input type="checkbox" className='h-6 w-6 inline-block mr-5' checked={props.status} />
+                <span className='text-2xl'>{props.task}</span>
             </div>
             <div>
                 <span className='mr-4 cursor-pointer'>Edit</span>
