@@ -1,12 +1,12 @@
 import React from 'react'
 
-const TaskItem = (props) => {
+const TaskItem = ({task, status}) => {
   return (
     <>
         <li className='list-none py-4 flex justify-between items-center border-b border-gray-400'>
             <div>
-                <input type="checkbox" className='h-6 w-6 inline-block mr-5' checked={props.status} />
-                <span className='text-2xl'>{props.task}</span>
+                <input type="checkbox" className='h-6 w-6 inline-block mr-5' checked={status} readOnly />
+                <span className='text-2xl inline-block text-white'>{task?.title}</span>
             </div>
             <div>
                 <span className='mr-4 cursor-pointer'>Edit</span>

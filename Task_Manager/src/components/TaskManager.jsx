@@ -2,8 +2,11 @@ import Logo from "../assets/DevShalehin.png";
 import TaskItem from "./TaskItem";
 import FiltersButton from "./FiltesButtons";
 import NewTast from "./NewTast";
+import useTask from "../hooks/useTask";
 
 export default function TaskManager() {
+  const tasks = useTask();  
+
   return (
     <>
       <div className="flex justify-center items-center h-screen w-screen bg-gray-900 text-white">
@@ -13,8 +16,11 @@ export default function TaskManager() {
             <h2 className="text-3xl mb-6 font-semibold">Task Manager</h2>
           </header>
           <FiltersButton />
+
           <NewTast />
-          <TaskItem />
+          {tasks.map((task) => (
+            <TaskItem key={task.id} task= {task} status={Boolean(task.complete)} /> 
+          ))}
         </div>
       </div>
     </>
