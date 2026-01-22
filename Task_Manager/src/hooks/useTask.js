@@ -6,6 +6,7 @@ import React from 'react'
 // console.log('Start Api');
 const useTask = () => {
 const[tasks, setTasks] = useState([]);
+const[status, setStatus] = useState()
 useEffect(()=>{
     const getToDos = async () => {
         
@@ -19,7 +20,9 @@ useEffect(()=>{
     }
     getToDos()
 }, []);
-
+const statusHandeler = ()=>{
+    
+}
 return tasks;
 }
 
